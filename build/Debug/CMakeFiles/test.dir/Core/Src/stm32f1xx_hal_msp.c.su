@@ -1,0 +1,5 @@
+/Users/uiye2048/Documents/test/Core/Src/stm32f1xx_hal_msp.c:62:6:HAL_MspInit	24	static
+/Users/uiye2048/Documents/test/Core/Src/stm32f1xx_hal_msp.c:89:6:HAL_ADC_MspInit	24	static
+/Users/uiye2048/Documents/test/Core/Src/stm32f1xx_hal_msp.c:112:6:HAL_ADC_MspDeInit	16	static
+/Users/uiye2048/Documents/test/Core/Src/stm32f1xx_hal_msp.c:134:6:HAL_UART_MspInit	40	static
+/Users/uiye2048/Documents/test/Core/Src/stm32f1xx_hal_msp.c:177:6:HAL_UART_MspDeInit	16	static
