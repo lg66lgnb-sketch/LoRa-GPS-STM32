@@ -1230,6 +1230,22 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "V2X_ROLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Select V2X role (vehicle or infrastructure)"
+				},
+				{
+					"name" : "STRINGS",
+					"value" : "vehicle;infrastructure"
+				}
+			],
+			"type" : "STRING",
+			"value" : "infrastructure"
+		},
+		{
 			"name" : "test_BINARY_DIR",
 			"properties" : 
 			[

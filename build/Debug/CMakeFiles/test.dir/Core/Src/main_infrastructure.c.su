@@ -1,0 +1,13 @@
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:106:8:to_radians	16	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:110:8:to_degrees	16	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:114:6:calculate_offset	112	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:132:6:LoRa_USART1_Init	32	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:166:6:USART1_IRQHandler	8	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:176:5:main	168	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:280:6:SystemClock_Config	96	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:317:13:MX_ADC1_Init	24	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:343:13:MX_USART3_UART_Init	8	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:362:13:MX_GPIO_Init	16	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:369:8:NMEA_to_Decimal	40	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:375:6:HAL_UART_RxCpltCallback	160	static
+/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c:509:6:Error_Handler	4	static

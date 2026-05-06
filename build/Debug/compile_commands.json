@@ -1,9 +1,9 @@
 [
 {
   "directory": "/Users/uiye2048/Documents/test/build/Debug",
-  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Core/Inc -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -o CMakeFiles/test.dir/Core/Src/main.c.obj -c /Users/uiye2048/Documents/test/Core/Src/main.c",
-  "file": "/Users/uiye2048/Documents/test/Core/Src/main.c",
-  "output": "CMakeFiles/test.dir/Core/Src/main.c.obj"
+  "command": "/opt/homebrew/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Core/Inc -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/Users/uiye2048/Documents/test/cmake/stm32cubemx/../../Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11 -o CMakeFiles/test.dir/Core/Src/main_infrastructure.c.obj -c /Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c",
+  "file": "/Users/uiye2048/Documents/test/Core/Src/main_infrastructure.c",
+  "output": "CMakeFiles/test.dir/Core/Src/main_infrastructure.c.obj"
 },
 {
   "directory": "/Users/uiye2048/Documents/test/build/Debug",

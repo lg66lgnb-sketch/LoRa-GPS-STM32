@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 81,
+				"line" : 102,
 				"parent" : 2
 			},
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 75,
+				"line" : 96,
 				"parent" : 2
 			}
 		]
@@ -246,7 +246,7 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/main.c",
+			"path" : "Core/Src/main_infrastructure.c",
 			"sourceGroupIndex" : 0
 		},
 		{

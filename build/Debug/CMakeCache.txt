@@ -229,6 +229,9 @@ CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/Users/uiye2048/Documents/test/cmake/gcc-arm-
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Select V2X role (vehicle or infrastructure)
+V2X_ROLE:STRING=infrastructure
+
 //Value Computed by CMake
 test_BINARY_DIR:STATIC=/Users/uiye2048/Documents/test/build/Debug
 
@@ -395,4 +398,6 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//STRINGS property for variable: V2X_ROLE
+V2X_ROLE-STRINGS:INTERNAL=vehicle;infrastructure
 
