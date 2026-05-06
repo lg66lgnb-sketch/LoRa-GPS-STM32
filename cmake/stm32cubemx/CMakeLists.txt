@@ -17,15 +17,36 @@ set(MX_Include_Dirs
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/CMSIS/Include
 )
 
+set(V2X_ROLE "infrastructure" CACHE STRING "Select V2X role (vehicle or infrastructure)")
+set_property(CACHE V2X_ROLE PROPERTY STRINGS vehicle infrastructure)
+
+if(NOT DEFINED V2X_ROLE OR V2X_ROLE STREQUAL "OFF" OR V2X_ROLE STREQUAL "")
+    set(V2X_ROLE "vehicle" CACHE STRING "Select V2X role (vehicle or infrastructure)" FORCE)
+endif()
+message(STATUS "Building V2X_ROLE=${V2X_ROLE}")
+
 # STM32CubeMX generated application sources
-set(MX_Application_Src
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/main.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_it.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_hal_msp.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/sysmem.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/syscalls.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../startup_stm32f103xe.s
-)
+if(V2X_ROLE STREQUAL "infrastructure")
+    set(MX_Application_Src
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/main_infrastructure.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_it.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_hal_msp.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/sysmem.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/syscalls.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../startup_stm32f103xe.s
+    )
+elseif(V2X_ROLE STREQUAL "vehicle")
+    set(MX_Application_Src
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/main_vehicle.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_it.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/stm32f1xx_hal_msp.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/sysmem.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/syscalls.c
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../startup_stm32f103xe.s
+    )
+else()
+    message(FATAL_ERROR "Unknown V2X_ROLE=\"${V2X_ROLE}\". Use 'vehicle' or 'infrastructure'.")
+endif()
 
 # STM32 HAL/LL Drivers
 set(STM32_Drivers_Src
